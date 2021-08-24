@@ -52,11 +52,11 @@ config = {
             'top_20_baseline', 
             'top_5_baseline',
             'win_baseline', 
-            'make_cut_baseline_history_fit',
-            'top_10_baseline_history_fit', 
-            'top_20_baseline_history_fit',
-            'top_5_baseline_history_fit', 
-            'win_baseline_history_fit'
+            # 'make_cut_baseline_history_fit',
+            # 'top_10_baseline_history_fit', 
+            # 'top_20_baseline_history_fit',
+            # 'top_5_baseline_history_fit', 
+            # 'win_baseline_history_fit'
         ],
     },
     'skill_decomps': {
