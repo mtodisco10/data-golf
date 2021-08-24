@@ -77,5 +77,20 @@ config = {
              'other_fit_adjustment',
              'final_pred',
         ]
+    },
+    'historical_event_lst': {
+        'path': 'historical-raw-data/event-list',
+        'fields':
+        [
+            'calendar_year',
+            'event_id',
+        ]
+    },
+    'historical_round_data': {
+        'path': 'historical-raw-data/rounds',
+        'fields':
+        [
+        ]
     }
+
 }
