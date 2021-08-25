@@ -4,12 +4,45 @@
 API_PATH = 'https://feeds.datagolf.com/'
 FILE_FORMAT = 'json'
 
-tour_lst = [
+tours = [
     'PGA',
     'OPP',
     'EUR',
     'KFT',
+    ]
+
+majors = [
+    'Masters Tournament',
+    'The Masters',
+    'The Masters #2',
+    'The Open Championship',
+    'U.S. Open',
+    'U.S. Open #2',
+    'PGA Championship',
+    ]
+
+metrics = [
+    {'field': 'early_out','periods': [2, 5], 'agg': 'sum'},
+    {'field': 'fin_num', 'periods': [2, 5], 'agg': 'mean'},
+    {'field': 'mean_sg', 'periods': [2, 5], 'agg':'mean'},
+    {'field': 'won_major', 'periods': [50], 'agg':'sum'},
+    {'field': 'top_10', 'periods': [10, 20], 'agg': 'sum'},
+    ]
+
+feat_cols = [
+    'early_out_in_prev_2_events',
+    'early_out_in_prev_5_events',
+    'fin_num_in_prev_2_events',
+    'fin_num_in_prev_5_events',
+    'mean_sg_in_prev_2_events', 
+    'mean_sg_in_prev_5_events',
+    'won_major_in_prev_50_events',
+    'top_10_in_prev_10_events',
+    'top_10_in_prev_20_events',
+    'close_odds',
 ]
+
+target_col = 'total_sg'
 
 config = {
     'field_updates': {
@@ -77,7 +110,7 @@ config = {
         'path': 'betting-tools/outrights',
         'fields': 
         [
-
+            'dg_id',
 
         ]
     },    
