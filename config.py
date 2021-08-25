@@ -51,12 +51,7 @@ config = {
             'top_10_baseline', 
             'top_20_baseline', 
             'top_5_baseline',
-            'win_baseline', 
-            # 'make_cut_baseline_history_fit',
-            # 'top_10_baseline_history_fit', 
-            # 'top_20_baseline_history_fit',
-            # 'top_5_baseline_history_fit', 
-            # 'win_baseline_history_fit'
+            'win_baseline',
         ],
     },
     'skill_decomps': {
@@ -65,19 +60,26 @@ config = {
         [
             'dg_id',
             'baseline_pred', 
-             'timing_adjustment',
-             'age_adjustment',
-             'strokes_gained_category_adjustment',
-             'course_experience_adjustment',
-             'course_history_adjustment', 
-             'total_course_history_adjustment', 
-             'total_fit_adjustment',
-             'driving_accuracy_adjustment',
-             'driving_distance_adjustment', 
-             'other_fit_adjustment',
-             'final_pred',
+            'timing_adjustment',
+            'age_adjustment',
+            'strokes_gained_category_adjustment',
+            'course_experience_adjustment',
+            'course_history_adjustment', 
+            'total_course_history_adjustment', 
+            'total_fit_adjustment',
+            'driving_accuracy_adjustment',
+            'driving_distance_adjustment', 
+            'other_fit_adjustment',
+            'final_pred',
         ]
     },
+    'odds':{
+        'path': 'betting-tools/outrights',
+        'fields': 
+        [
+
+        ]
+    },    
     'historical_event_lst': {
         'path': 'historical-raw-data/event-list',
         'fields':
@@ -90,6 +92,15 @@ config = {
         'path': 'historical-raw-data/rounds',
         'fields':
         [
+            'dg_id',
+            ''
+        ]
+    },
+    'historical_odds': {
+        'path': 'historical-odds/outrights',
+        'fields':
+        [
+
         ]
     }
 
