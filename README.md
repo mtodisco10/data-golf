@@ -59,7 +59,7 @@ A statsmodels OLS model was initially fit on the dataset with an R^2 value of .1
 However, several linear regression assumptions were violated, namely non-linearity.
 
 <p align="center">
-  <img width="600" height="400" src="/images/linearity_check.png">
+  <img width="600" height="500" src="/images/linearity_check.png">
 </p>
 
 So I moved on to a less stringent model
@@ -83,12 +83,12 @@ Predictions are made on the new data using the RandomForest model.
 
 Table compairing DraftKing salaries vs predicted total strokes gained
 
-**Top 5**
+**Top 5 Golfers with Positive rnk_diff**
 <p align="center">
   <img width="700" height="250" src="/images/top_10_rnk_diff.png">
 </p>
 
-**Bottom 5**
+**Bottom 5 Golfers with Negative rnk_diff**
 <p align="center">
   <img width="700" height="250" src="/images/bottom_10_rnk_diff.png">
 </p>
