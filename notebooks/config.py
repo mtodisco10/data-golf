@@ -1,6 +1,3 @@
-# import os
-# MY_API_KEY = os.environ.get('MY_API_KEY')
-
 API_PATH = 'https://feeds.datagolf.com/'
 FILE_FORMAT = 'json'
 
