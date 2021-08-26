@@ -41,3 +41,16 @@ def create_rolling_agg_features_by_golfer(df, field, n_shift, n_rolling, agg_fun
             .transform(lambda x: x.rolling(n_rolling, min_periods=1)
                        .agg(agg_func))
            )
+
+def create_map_to_aggregates(df, col_to_groupby, col_to_agg, agg):
+	"""
+	Returns a dictionary to be used to map data to a column in a dataframe
+
+	Args:
+		df (DataFrame): the DataFrame to aggregate from
+		col_to_groupby (str): the field to group
+		col_to_agg (str): the field to agggregate
+		agg (str): type of aggregation ie sum, mean, etc.
+	"""
+	mapping_dict = df.groupby(col_to_groupby)[col_to_agg].agg(agg).to_dict()
+	return mapping_dict
