@@ -59,11 +59,22 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 
 ## Training<a class="anchor" id="Training"></a>
 ### Fitting a Linear Model<a class="anchor" id="LR"></a>
-- unsuccessfully
+A statsmodels OLS model was initially fit on the dataset with an R^2 value of .15.  
+
+However, several linear regression assumptions were violated.
+
+So I moved on to a less stringent model
 ### Fitting a Random Forest Model<a class="anchor" id="RF"></a>
+A Random Forest model performed slightly bette with an R^2 value of .17 on test data.
+
+The odds prior to a tournment starting was by far the most important feature.
+
+<p align="center">
+  <img width="600" height="400" src="/images/feat_imp.png">
+</p>
 
 ## Prediction<a class="anchor" id="Prediction"></a>
-### Data Processing<a class="anchor" id="predProcessing"></a>
+### Data preprocessing<a class="anchor" id="predProcessing"></a>
 ### Output <a class="anchor" id="Output"></a>
 Table compairing DraftKing salaries vs predicted total strokes gained
 
