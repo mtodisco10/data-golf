@@ -11,7 +11,7 @@ Using [Data Golf's](https://datagolf.com/) robust API, the goal of this project 
 
 
 ## Table of Contents 
-- Data Collection (#dataCollection)
+- [Data Collection](#dataCollection)
 ## Data Collection <a class="anchor" id="dataCollection"></a>
 
 
