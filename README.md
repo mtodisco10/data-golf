@@ -2,7 +2,7 @@
   <img width="200" height="200" src="https://datagolf.com/static/dg_logo.png">
 </p>
 
-# Professional Golfer Strokes Gained Predictor
+# Pro Golfer Strokes Gained Predictor
 
 ## Aims of the Project
 Using [Data Golf's](https://datagolf.com/) robust API, the goal of this project is to extract historical round scoring data and build a model to accurately predict the **total strokes gained** for golfers participating in an upcoming event. 
@@ -59,7 +59,7 @@ A statsmodels OLS model was initially fit on the dataset with an R^2 value of .1
 However, several linear regression assumptions were violated, namely non-linearity.
 
 <p align="center">
-  <img width="600" height="500" src="/images/linearity_check.png">
+  <img width="500" height="500" src="/images/linearity_check.png">
 </p>
 
 So I moved on to a less stringent model
