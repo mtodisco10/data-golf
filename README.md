@@ -22,11 +22,16 @@ For this iteration of the project, only Total Strokes Gained is incorporated, ho
 
 ## Table of Contents 
 - [Data Collection](#dataCollection)
-- [Data Processing & Feature Engineering](#FE)
+- [Data Processing](#DP)
+	- [Feature Engineering](#FE)
+	- [Exploratory Analysis](#EA)
 - [Training](#Training)
+	- [Linear Regression](#LR)
+	- [Random Forest](#RF)
 - [Prediction](#Prediction)
 	- [Data Processing](predProcessing)
 	- [Output](#Output)
+- [Future Work](#FW)
 ## Data Collection <a class="anchor" id="dataCollection"></a>
 - The code for the data collection process can by found in the `Extract From Data Golf API.ipynb` jupyter notebook.  It uses two defined classes to pull the data:
 1. `CurrentTourneyDataGolfExtractor`
@@ -47,22 +52,22 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 - In order to handle that I made a function `create_rolling_agg_features_by_golfer`, which for a given field and period calculates the lagging aggregates so that they can be used for modeling.
 	- The function is located in the [utils.py](https://github.com/mtodisco10/data-golf/blob/master/notebooks/utils.py) file.
 
-### Exploratory Data Analysis
+### Exploratory Analysis<a class="anchor" id="EA"></a>
 
 ## Training<a class="anchor" id="Training"></a>
-### Fitting a Linear Model
+### Fitting a Linear Model<a class="anchor" id="LR"></a>
 - unsuccessfully
-### Fitting a Random Forest Model
+### Fitting a Random Forest Model<a class="anchor" id="RF"></a>
 
 ## Prediction<a class="anchor" id="Prediction"></a>
 ### Data Processing<a class="anchor" id="predProcessing"></a>
 ### Output <a class="anchor" id="Output"></a>
 Table compairing DraftKing salaries vs predicted total strokes gained
 <p align="center">
-  <img width="700" height="500" src="/images/rnk_diff_output.png">
+  <img width="600" height="400" src="/images/rnk_diff_output.png">
 </p>
 
-## Future Work
+## Future Work<a class="anchor" id="FW"></a>
 
 
 
