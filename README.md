@@ -9,11 +9,12 @@ Goal: predict strokes gained for each Golfer in a field for an upcoming tourname
 ## Aims of this Project
 Using [Data Golf's](https://datagolf.com/) robust API, the goal of this project is to predict strokes gained for golfer's participating in an upcoming event.
 
-For now the focus is on men's **PGA** tour, events however, functions have been designed to take other tours that data golf supports ('OPP','EUR', 'KFT') as parameters.
+For now the focus is on men's **PGA** tour, events however, functions have been designed to take other tours that data golf supports (European, Korn Ferry, etc.) as parameters.
 
 ## Strokes Gained: A Primer
 [PGA Tour Definition](https://www.pgatour.com/news/2016/05/31/strokes-gained-defined.html)
-Strokes gained: total simply compares a player's score to the field average. For example, a player will gain three strokes on the field if he shoots 69 on a day when the field averages 72. A player who shoots 74 on that day loses two strokes to the field.
+
+Strokes gained: simply compares a player's score to the field average. For example, a player will gain three strokes on the field if he shoots 69 on a day when the field averages 72. A player who shoots 74 on that day loses two strokes to the field.
 
 ## Table of Contents 
 - [Data Collection](#dataCollection)
