@@ -12,12 +12,21 @@ Using [Data Golf's](https://datagolf.com/) robust API, the goal of this project 
 
 ## Table of Contents 
 - [Data Collection](#dataCollection)
+- [Data Processing & Feature Engineering](#FE)
+- [Training](#Training)
+- [Prediction](#Prediction)
+	- [Data Processing](predProcessing)
+	- [Output](#Output)
 ## Data Collection <a class="anchor" id="dataCollection"></a>
 
+## Data Processing & Feature Engineering <a class="anchor" id="FE"></a>
 
-## Data Processing & Feature Engineering
+## Training<a class="anchor" id="Training"></a>
 
-## Model Training
+## Prediction<a class="anchor" id="Prediction"></a>
+### Data Processing<a class="anchor" id="predProcessing"></a>
+### Output <a class="anchor" id="Output"></a>
+Table compairing DraftKing salaries vs predicted total strokes gained
 
 
 
