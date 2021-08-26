@@ -53,6 +53,9 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 	- The function is located in the [utils.py](https://github.com/mtodisco10/data-golf/blob/master/notebooks/utils.py) file.
 
 ### Exploratory Analysis<a class="anchor" id="EA"></a>
+<p align="center">
+  <img width="600" height="400" src="/images/total_sg_hist.png">
+</p>
 
 ## Training<a class="anchor" id="Training"></a>
 ### Fitting a Linear Model<a class="anchor" id="LR"></a>
