@@ -69,12 +69,12 @@ Table compairing DraftKing salaries vs predicted total strokes gained
 
 **Top 10**
 <p align="center">
-  <img width="600" height="400" src="/images/top_10_rnk_diff.png">
+  <img width="700" height="400" src="/images/top_10_rnk_diff.png">
 </p>
 
 **Bottom 10**
 <p align="center">
-  <img width="600" height="400" src="/images/bottom_10_rnk_diff.png">
+  <img width="700" height="400" src="/images/bottom_10_rnk_diff.png">
 </p>
 
 ## Future Work<a class="anchor" id="FW"></a>
