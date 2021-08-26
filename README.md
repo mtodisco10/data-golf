@@ -67,14 +67,14 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 ### Output <a class="anchor" id="Output"></a>
 Table compairing DraftKing salaries vs predicted total strokes gained
 
-**Top 10**
+**Top 5**
 <p align="center">
-  <img width="700" height="400" src="/images/top_10_rnk_diff.png">
+  <img width="800" height="300" src="/images/top_10_rnk_diff.png">
 </p>
 
-**Bottom 10**
+**Bottom 5**
 <p align="center">
-  <img width="700" height="400" src="/images/bottom_10_rnk_diff.png">
+  <img width="800" height="300" src="/images/bottom_10_rnk_diff.png">
 </p>
 
 ## Future Work<a class="anchor" id="FW"></a>
