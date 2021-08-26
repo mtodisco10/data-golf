@@ -4,17 +4,19 @@
 
 # Professional Golfer Strokes Gained Predictor
 
-Goal: predict strokes gained for each Golfer in a field for an upcoming tournament
+## Aims of the Project
+Using [Data Golf's](https://datagolf.com/) robust API, the goal of this project is to extract historical round scoring data and build a model to accurately predict the **total strokes gained** for golfer's participating in an upcoming event. Comparing prediction outputs with daily fantasy salaries can help inform betting strategies and optimize lineup construction.
 
-## Aims of this Project
-Using [Data Golf's](https://datagolf.com/) robust API, the goal of this project is to predict strokes gained for golfer's participating in an upcoming event.
-
-For now the focus is on men's **PGA** tour, events however, functions have been designed to take other tours that data golf supports (European, Korn Ferry, etc.) as parameters.
+Notes:
+- For now the focus is on men's **PGA** tour, events however, functions have been designed to take other tours that data golf supports (European, Korn Ferry, etc.) as arguements.
+- The model is trained to predict on the event level (ie over 4 collective rounds), however individual round prediction is planned for future work.
 
 ## Strokes Gained: A Primer
-[PGA Tour Definition](https://www.pgatour.com/news/2016/05/31/strokes-gained-defined.html)
-
 Strokes gained: simply compares a player's score to the field average. For example, a player will gain three strokes on the field if he shoots 69 on a day when the field averages 72. A player who shoots 74 on that day loses two strokes to the field.
+
+For more details see the [PGA Tour Definition](https://www.pgatour.com/news/2016/05/31/strokes-gained-defined.html)
+
+For this iteration of the project, only Total Strokes Gained is incorporated, however, more granular strokes gained metrics such as strokes gained putting, tee to green, around the green, etc. will be included in future iterations.
 
 ## Table of Contents 
 - [Data Collection](#dataCollection)
@@ -54,7 +56,9 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 Table compairing DraftKing salaries vs predicted total strokes gained
 
 ## Future Work
-
+<p align="center">
+  <img width="200" height="200" src="/images/rnk_diff_output.png">
+</p>
 
 
 
