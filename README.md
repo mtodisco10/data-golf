@@ -52,16 +52,15 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 - In order to handle that I made a function `create_rolling_agg_features_by_golfer`, which for a given field and period calculates the lagging aggregates so that they can be used for modeling.
 	- The function is located in the [utils.py](https://github.com/mtodisco10/data-golf/blob/master/notebooks/utils.py) file.
 
-### Exploratory Analysis<a class="anchor" id="EA"></a>
-<p align="center">
-  <img width="600" height="400" src="/images/total_sg_hist.png">
-</p>
-
 ## Training<a class="anchor" id="Training"></a>
 ### Fitting a Linear Model<a class="anchor" id="LR"></a>
 A statsmodels OLS model was initially fit on the dataset with an R^2 value of .15.  
 
-However, several linear regression assumptions were violated.
+However, several linear regression assumptions were violated, namely non-linearity.
+
+<p align="center">
+  <img width="600" height="400" src="/images/linearity_check.png">
+</p>
 
 So I moved on to a less stringent model
 ### Fitting a Random Forest Model<a class="anchor" id="RF"></a>
@@ -75,20 +74,30 @@ The odds prior to a tournment starting was by far the most important feature.
 
 ## Prediction<a class="anchor" id="Prediction"></a>
 ### Data preprocessing<a class="anchor" id="predProcessing"></a>
+Data from the pre-tourney file is appended to the historical event data.
+Engineered features along with the lag features are calculated just as they are before training.
+The current event data is then subsetted to be used for prediction.
+
 ### Output <a class="anchor" id="Output"></a>
+Predictions are made on the new data using the RandomForest model.
+
 Table compairing DraftKing salaries vs predicted total strokes gained
 
 **Top 5**
 <p align="center">
-  <img width="800" height="300" src="/images/top_10_rnk_diff.png">
+  <img width="700" height="250" src="/images/top_10_rnk_diff.png">
 </p>
 
 **Bottom 5**
 <p align="center">
-  <img width="800" height="300" src="/images/bottom_10_rnk_diff.png">
+  <img width="700" height="250" src="/images/bottom_10_rnk_diff.png">
 </p>
 
 ## Future Work<a class="anchor" id="FW"></a>
+- Performing transformations to appease linear regression assumptions
+- Continued feature engineering
+- Data collection from additional data sources such as [Fantasy National](https://www.fantasynational.com/)
+- Round by Round predictions for "Showdown" daily fantasy golf
 
 
 
