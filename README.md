@@ -54,11 +54,11 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 ### Data Processing<a class="anchor" id="predProcessing"></a>
 ### Output <a class="anchor" id="Output"></a>
 Table compairing DraftKing salaries vs predicted total strokes gained
+<p align="center">
+  <img width="800" height="500" src="/images/rnk_diff_output.png">
+</p>
 
 ## Future Work
-<p align="center">
-  <img width="400" height="400" src="/images/rnk_diff_output.png">
-</p>
 
 
 
