@@ -44,7 +44,7 @@ Once extracted, the two datasets are written as csv files, so that they can be u
 
 ## Data Processing <a class="anchor" id="DP"></a>
 - The two csv's are read into the notebook `Feature Eng & Training.ipynb` for inspection, analysis, and feature engineering
-- Only 78% of rounds have full detailed strokes gained values populated, however total strokes gained `sg_total` is fully populated, which is our target variable.
+- Only 72% of events have full detailed strokes gained values populated, however total strokes gained `sg_total` is fully populated, which is our target variable.
 - The historical data is presented on the round by round level, so it was necessary to `groupby` event fields and aggregate numeric fields for each round either by it's average or sum.
 
 ### Feature Engineering <a class="anchor" id="FE"></a>
@@ -96,7 +96,10 @@ Table compairing DraftKing salaries vs predicted total strokes gained
 ## Future Work<a class="anchor" id="FW"></a>
 - Performing transformations to appease linear regression assumptions
 - Continued feature engineering
+	- Previous course/event performance
+	- Course type performance: long vs short, links style, green types, etc.
 - Data collection from additional data sources such as [Fantasy National](https://www.fantasynational.com/)
+	- full strokes gained data (T2G, APP, PUTT)
 - Round by Round predictions for "Showdown" daily fantasy golf
 
 
